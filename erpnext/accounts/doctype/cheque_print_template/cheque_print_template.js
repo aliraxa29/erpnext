@@ -57,7 +57,7 @@ frappe.ui.form.on("Cheque Print Template", {
 			if (frm.doc.scanned_cheque) {
 				$(frm.fields_dict.cheque_print_preview.wrapper)
 					.find("#cheque_preview")
-					.css("background-image", "url(" + frm.doc.scanned_cheque + ")");
+					.css("background-image", 'url("' + frm.doc.scanned_cheque + '")');
 			}
 		}
 	},
